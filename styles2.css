@@ -4,7 +4,7 @@
 
 body {
   padding:0px;
-  font:14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:18px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
 
@@ -185,12 +185,41 @@ th, td {
 	text-align: center;
 	vertical-align: middle;
 	line-height: 40px;
-	box-shadow: inset 0px 1px 0px 0px #aaa;
 	border: 1px solid #333;
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
 	text-shadow: 0px 1px 0px #333;
+	-webkit-transition: all 0.2s ease;
+	/*background: red; */
+	box-shadow: inset 0px -3px 0px #ff0066;
+}
+
+.button:hover {
+	width: 900px;
+	/*border-radius: 20px;*/
+	/*background: blue; CAN"T DO THIS*/
+	box-shadow: 0px 0px 0px #aaa;
+	/*-webkit-transform: rotate(10deg);*/
+	/*-webkit-transition: width 1s ease, 
+						background 3s linear;*/
+	-webkit-transition: transform 2.5s ease;
+	/*background: linear-gradient(to bottom, rgba(205,235,142,1) 0%,rgba(165,201,86,1) 100%); /* W3C */*/
+	/*opacity: 0.4;*/
+}
+
+.button:active {
+	top: 10px;
+	height: 30px;
+	/*border-radius: 20px;*/
+	/*background: blue; CAN"T DO THIS*/
+	box-shadow: 0px 31px 32px #fff;
+	/*-webkit-transform: rotate(10deg);*/
+	/*-webkit-transition: width 1s ease, 
+						background 3s linear;*/
+	/*-webkit-transition: transform 2.5s ease;*/
+	/*background: linear-gradient(to bottom, rgba(205,235,142,1) 0%,rgba(165,201,86,1) 100%); /* W3C */*/
+	/*opacity: 0.4;*/
 }
 
 
@@ -217,4 +246,56 @@ th, td {
 }
 
 
+h1 {font-size: 25px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+h4 {font-size: 14px;}
+h5 {font-size: 12px;}
 
+
+.welcome {
+	width: 620px;
+	height: 400px;
+}
+
+.content_info {
+	position: relative;
+	width: 620px;
+	border: 0px solid #ff0066;
+}
+
+.content_title {
+	position: absolute;
+	width: 620px;
+	height: 50px;  
+	padding: 14px 0px 0px 0px;
+   	background: rgb(0, 0, 0); /* fallback color */
+   	background: rgba(0, 0, 0, 0.4);
+}
+
+.content_title span.l_title {
+	padding: 0px 0px 0px 23px;
+	width: 170px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin: 0px 0px 0px 0px;
+	color: #fff;
+	
+}
+
+.content_title span.r_title {
+	padding: 0px 15px 0px 0px;
+	float: right;
+	width: auto;
+	font-size: 14px;
+	letter-spacing: 0px;
+	margin: 0px 0px 0px 0px;
+	color: #fff;
+	opacity: 0.9;
+}
+
+.content_title img {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 4px 0px 0px;
+	display: inline;
+}
